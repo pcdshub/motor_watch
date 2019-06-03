@@ -1,0 +1,32 @@
+
+{% set data = load_setup_py_data() %}
+
+
+package:
+    name    : motor_watch
+
+    version : {{ data.get('version') }}
+
+
+source:
+    path: ..
+
+requirements:
+    build:
+      - python
+      - setuptools
+
+    run:
+      - python
+
+test:
+    imports:
+      - motor_watch
+
+    requires:
+      - pytest
+
+about:
+  home: https://github.com/pcdshub/motor_watch
+  license: SLAC Open License
+  summary: Track motor motion through Status objects

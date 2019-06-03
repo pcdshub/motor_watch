@@ -1,0 +1,11 @@
+[run]
+source =
+    motor_watch
+[report]
+omit =
+    #versioning
+    .*version.*
+    *_version.py
+    #tests
+    *test*
+    motor_watch/tests/*
