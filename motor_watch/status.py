@@ -1,4 +1,5 @@
-
-
 def process(status):
-    raise NotImplementedError
+    dict = {}
+    dict['name'] = status.pos.name
+    dict['target'] = status.target
+    return dict
