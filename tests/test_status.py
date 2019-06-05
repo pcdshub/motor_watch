@@ -13,5 +13,5 @@ def move_status(motor):
 def test_status_record(move_status, motor):
     move_status._finished(success=True)
     move_info = process(move_status)
-    assert move_info['name'] == motor.pos
+    assert move_info['name'] == motor.name
     assert move_info['target'] == move_status.target
