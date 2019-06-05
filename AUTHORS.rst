@@ -9,5 +9,5 @@ Maintainer
 
 Contributors
 ------------
-
+Ella Peterson <epeters1@slac.stanford.edu>
 Interested? See: CONTRIBUTING.rst
