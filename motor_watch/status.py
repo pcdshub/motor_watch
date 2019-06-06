@@ -1,5 +1,5 @@
 def process(status):
-    dict = {}
-    dict['name'] = status.pos.name
-    dict['target'] = status.target
-    return dict
+    status_info = {}
+    status_info['name'] = status.pos.name
+    status_info['target'] = status.target
+    return status_info
